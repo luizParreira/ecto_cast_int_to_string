@@ -5,7 +5,7 @@ EctoCastint is a simple library that enables ecto casting from integer to string
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `:eccto_castint` to your list of dependencies in `mix.exs`:
+by adding `:ecto_castint` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
