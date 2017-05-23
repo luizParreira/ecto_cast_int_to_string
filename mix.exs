@@ -29,6 +29,7 @@ defmodule EctoCastint.Mixfile do
     [
       maintainers: ["Luiz Parreira"],
       licenses: ["MIT"],
+      files: ["lib", "mix.exs", "README.md", "LICENSE"],
       links: %{"GitHub" => "https://github.com/luizParreira/ecto_castint"}
     ]
   end
