@@ -1,6 +1,6 @@
 # EctoCastint
 
-EctoCastint is a simple library that enables ecto casting from integer to string.
+EctoCastIntToString is a simple library that enables ecto casting from integer to string.
 
 ## Installation
 
