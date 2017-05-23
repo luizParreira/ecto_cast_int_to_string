@@ -1,5 +1,7 @@
 # EctoCastIntToString
 
+DEPRECATED - Use https://github.com/luizParreira/ecto_cast_to_string
+
 EctoCastIntToString is a simple library that enables ecto casting from integer to string.
 
 ## Installation
