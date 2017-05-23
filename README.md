@@ -1,4 +1,4 @@
-# EctoCastint
+# EctoCastIntToString
 
 EctoCastIntToString is a simple library that enables ecto casting from integer to string.
 
