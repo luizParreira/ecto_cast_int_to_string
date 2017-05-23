@@ -34,11 +34,7 @@ defmodule EctoCastint do
       end
   """
   @spec cast(integer) :: {:ok, String.t} | :error
-  def cast(integer) when is_integer(integer) do
-    case Integer.to_string(integer) do
-      string -> {:ok, string}
-    end
-  end
+  def cast(integer) when is_integer(integer), do: {:ok, Integer.to_string(integer)}
 
   # We should still accept strings
   def cast(string) when is_bitstring(string), do: {:ok, string}
