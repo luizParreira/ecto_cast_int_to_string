@@ -4,8 +4,7 @@ EctoCastIntToString is a simple library that enables ecto casting from integer t
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `:ecto_cast_int_to_string` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `:ecto_cast_int_to_string` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
