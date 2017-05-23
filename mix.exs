@@ -7,14 +7,14 @@ defmodule EctoCastint.Mixfile do
   def project do
     [app: :ecto_castint,
      version: @version,
-     elixir: "~> 1.2",
+     elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      description: @description,
      source_url: "https://github.com/luizParreira/ecto_castint",
      docs: [extras: ["README.md"], main: "EctoCastint"],
      deps: deps(),
-     package: package]
+     package: package()]
   end
 
   # Configuration for the OTP application
