@@ -1,4 +1,4 @@
-defmodule EctoCastint do
+defmodule EctoCastIntToString do
   @behaviour Ecto.Type
   def type, do: :string
 
@@ -21,13 +21,13 @@ defmodule EctoCastint do
 
   ## Examples
 
-      iex> EctoCastint.cast(1)
+      iex> EctoCastIntToString.cast(1)
       {:ok, "1"}
 
   ## Usage
       defmodule MyModel do
         schema "my_model" do
-          field :a_string, EctoCastint
+          field :a_string, EctoCastIntToString
 
           timestamps()
         end

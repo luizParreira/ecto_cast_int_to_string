@@ -1,18 +1,18 @@
-defmodule EctoCastint.Mixfile do
+defmodule EctoCastIntToString.Mixfile do
   use Mix.Project
 
-  @description "EctoCastint is a simple library that enables ecto casting from int to string."
+  @description "EctoCastIntToString is a simple library that enables ecto casting from int to string."
   @version "0.1.0"
 
   def project do
-    [app: :ecto_castint,
+    [app: :ecto_cast_int_to_string,
      version: @version,
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      description: @description,
-     source_url: "https://github.com/luizParreira/ecto_castint",
-     docs: [extras: ["README.md"], main: "EctoCastint"],
+     source_url: "https://github.com/luizParreira/ecto_cast_int_to_string",
+     docs: [extras: ["README.md"], main: "EctoCastIntToString"],
      deps: deps(),
      package: package()]
   end
@@ -30,7 +30,7 @@ defmodule EctoCastint.Mixfile do
       maintainers: ["Luiz Parreira"],
       licenses: ["MIT"],
       files: ["lib", "mix.exs", "README.md", "LICENSE"],
-      links: %{"GitHub" => "https://github.com/luizParreira/ecto_castint"}
+      links: %{"GitHub" => "https://github.com/luizParreira/ecto_cast_int_to_string"}
     ]
   end
 
@@ -44,6 +44,6 @@ defmodule EctoCastint.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:phoenix_ecto, "~> 3.0"}]
+    [{:ecto, "~> 2.1"}]
   end
 end
