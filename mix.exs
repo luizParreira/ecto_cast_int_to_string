@@ -1,13 +1,20 @@
-defmodule EctoCastint.Mixfile do
+defmodule EctoCastIntToString.Mixfile do
   use Mix.Project
 
+  @description "EctoCastIntToString is a simple library that enables ecto casting from int to string."
+  @version "0.1.0"
+
   def project do
-    [app: :ecto_castint,
-     version: "0.1.0",
-     elixir: "~> 1.4",
+    [app: :ecto_cast_int_to_string,
+     version: @version,
+     elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     description: @description,
+     source_url: "https://github.com/luizParreira/ecto_cast_int_to_string",
+     docs: [extras: ["README.md"], main: "EctoCastIntToString"],
+     deps: deps(),
+     package: package()]
   end
 
   # Configuration for the OTP application
@@ -16,6 +23,15 @@ defmodule EctoCastint.Mixfile do
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
     [extra_applications: [:logger]]
+  end
+
+  def package do
+    [
+      maintainers: ["Luiz Parreira"],
+      licenses: ["MIT"],
+      files: ["lib", "mix.exs", "README.md", "LICENSE"],
+      links: %{"GitHub" => "https://github.com/luizParreira/ecto_cast_int_to_string"}
+    ]
   end
 
   # Dependencies can be Hex packages:
@@ -28,6 +44,6 @@ defmodule EctoCastint.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:ecto, "~> 2.1"}]
   end
 end
